@@ -1400,6 +1400,15 @@ config TOUCHSCREEN_GEN_VKEYS
 	 To compile this driver as a module, choose M here: the
 	 module will be called gen_vkeys.
 
+config FOCALTECH_5336
+       bool "Support for Focaltech 5336 touchscreen"
+       depends on TOUCHSCREEN_FT5X06
+       help
+         Say Y if you have a FT5336 touchscreen.
+
+         if unsure, say N.
+
+
 config FT_SECURE_TOUCH
 	bool "Secure Touch support for Focaltech Touchscreen"
 	depends on TOUCHSCREEN_FT5X06
