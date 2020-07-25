@@ -25,8 +25,8 @@
 	aw2013@45 {
 		compatible = "awinic,aw2013";
 		reg = <0x45>;			 
-		vdd-supply = <0xcd>; //Power supply needed to power up the device
-		vcc-supply = <0xb6>; //Power source required to power up i2c bus
+		vdd-supply = <&pm8937_l10>; //Power supply needed to power up the device
+		vcc-supply = <&pm8937_l5>; //Power source required to power up i2c bus
 
 		aw2013,red {
 			aw2013,name = "red";
@@ -158,7 +158,7 @@
 
 	gen-vkey1 {
 		compatible = "qcom,gen-vkeys";
-		label = "ft5x06_720p";
+		label = "ft5x06_ts";
 		qcom,disp-maxx = <720>;
 		qcom,disp-maxy = <1280>;
 		qcom,panel-maxx = <720>;
