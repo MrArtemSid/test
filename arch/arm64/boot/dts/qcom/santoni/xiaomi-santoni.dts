@@ -45,6 +45,8 @@
 	status = "okay";
 	qcom,vchg_sns-vadc = <&pmi8950_vadc>;
 	qcom,vchg-adc-channel-id = <3>;
+	qcom,chg-led-sw-controls;
+	qcom,chg-led-support;
 };
 
 &qpnp_fg {
