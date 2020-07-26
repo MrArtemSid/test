@@ -27,6 +27,7 @@
 };
 
 / {
+	/delete-node/ qcom,battery-data;
 	qrd_batterydata: qcom,battery-data {
 		qcom,batt-id-range-pct = <15>;
 		#include "batterydata-qrd-Desay-4v4-4100mah.dtsi"
